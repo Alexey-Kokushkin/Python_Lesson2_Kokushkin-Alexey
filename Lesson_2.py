@@ -54,29 +54,36 @@
 # В заданном списке вещественных чисел найдите разницу между максимальным и минимальным значением дробной части элементов. 
 # Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
-numbers=[1.1, 1.2, 3.1, 5.02, 10.01]
-NewNumbers=[0.0,0.0,0.0,0.0,0.0]
-j=int(0)
-while j<=len(numbers)-1:
-    NewNumbers[j]=round(numbers[j]%1, 2)
-    j+=1
-print(NewNumbers)
+#numbers=[1.1, 1.2, 3.1, 5.02, 10.01]
+#NewNumbers=[0.0,0.0,0.0,0.0,0.0]
+#j=int(0)
+#while j<=len(numbers)-1:
+    #NewNumbers[j]=round(numbers[j]%1, 2)
+    #j+=1
+#print(NewNumbers)
 
-min=NewNumbers[0]
-i=0
-while i<=len(NewNumbers)-1:
-    if NewNumbers[i]<min:
-        min=NewNumbers[i]
-    i+=1
-print("Минимальное значение дробной части =",min)
+#min=NewNumbers[0]
+#i=0
+#while i<=len(NewNumbers)-1:
+    #if NewNumbers[i]<min:
+        #min=NewNumbers[i]
+    #i+=1
+#print("Минимальное значение дробной части =",min)
 
-max=NewNumbers[0]
-i=0
-while i<=len(NewNumbers)-1:
-    if NewNumbers[i]>max:
-        max=NewNumbers[i]
-    i+=1
-print("Максимальное значение дробной части =",max)
+#max=NewNumbers[0]
+#i=0
+#while i<=len(NewNumbers)-1:
+    #if NewNumbers[i]>max:
+        #max=NewNumbers[i]
+    #i+=1
+#print("Максимальное значение дробной части =",max)
 
-dif=max-min
-print("Разница между максимальным и минимальным значением дробной части элементов =",dif)
+#dif=max-min
+#print("Разница между максимальным и минимальным значением дробной части элементов =",dif)
+
+
+# Написать программу преобразования десятичного числа в двоичное
+
+print('Enter value N = ')
+N=int(input())
+print('Число в двоичной системе\n'f"N = {N:0b}")
